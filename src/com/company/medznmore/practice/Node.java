@@ -1,8 +1,8 @@
-package com.company.medznmore.graph.practice;
+package com.company.medznmore.practice;
 
 import java.util.ArrayList;
 
-class Node {
+public class Node {
   String name; // the name of the person
   ArrayList<Node> friends; // the list of friends
 

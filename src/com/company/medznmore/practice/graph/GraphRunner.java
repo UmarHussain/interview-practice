@@ -1,4 +1,6 @@
-package com.company.medznmore.graph.practice;
+package com.company.medznmore.practice.graph;
+
+import com.company.medznmore.practice.Node;
 
 public class GraphRunner {
   public static void main(String[] args) {
