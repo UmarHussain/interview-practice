@@ -2,18 +2,18 @@ package com.company.medznmore.practice;
 
 import java.util.ArrayList;
 
-public class Node {
-  String name; // the name of the person
-  ArrayList<Node> friends; // the list of friends
+public class GraphNode {
+  private String name; // the name of the person
+  private ArrayList<GraphNode> friends; // the list of friends
 
   // constructor
-  public Node(String name) {
+  public GraphNode(String name) {
     this.name = name;
     this.friends = new ArrayList<>();
   }
 
   // add a friend to the list
-  public void addFriend(Node friend) {
+  public void addFriend(GraphNode friend) {
     this.friends.add(friend);
   }
 
@@ -21,10 +21,18 @@ public class Node {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append(name + " --- ");
-    for (Node friend : friends) {
+    for (GraphNode friend : friends) {
       sb.append(friend.name + " ");
     }
     return sb.toString();
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public ArrayList<GraphNode> getFriends() {
+    return friends;
   }
 }
 

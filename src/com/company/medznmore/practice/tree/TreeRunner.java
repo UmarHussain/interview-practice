@@ -1,4 +1,7 @@
 package com.company.medznmore.practice.tree;
 
-public class TreeRunner {
+ class TreeRunner {
+  public static void main(String[] args) {
+
+  }
 }
